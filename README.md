@@ -28,6 +28,35 @@ To execute the code
 $ git pull upstream master 
 ````
 
+
+```text
+1. Calculating histone marks subsets between different ChIP-Seq files. 
+Usage: python3 LD_getSubsets.py [INPUT_FILES] [OPTIONS]... >> [OUTPUT_DIR}
+
+Input filess:
+  BED file format, each separated by a space
+  
+Options:
+  --help                  Show this message and exit.
+
+Output directory:
+  A directory path where the output BED files are deposited
+
+2. Screening GREAT output file for cardiac-specific gene candidates. 
+Usage: perl compare_GREAT_genes.pl [INPUT_FILE] [OPTIONS]... >> [OUTPUT_FILE]
+
+Input file:
+  TXT (tab-separated) file format, the output files from GREAT database
+  
+Options:
+  --help                  Show this message and exit.
+
+Output file:
+  TXT (tab-separated) file format, containing the predicted cardiac-specific genes
+  
+```
+
+
 ## An example script to run the pipeline
 
 Calculating all the CREs between the organs and their overlaps
