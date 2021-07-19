@@ -59,7 +59,7 @@ Output file:
 
 ## An example script to run the pipeline
 
-### Step 1: Calculating all the CREs between the organs and their overlaps
+### Step 1 (Python) - Calculating all the CREs between the organs and their overlaps
 
 ````
 $ #!/bin/bash
@@ -72,7 +72,7 @@ $ python3 ../../000_scripts/HN_LD_getSubsets.py H3K27acHeartmm9UE14halfEncodeLic
 
 ````
 
-### Step 1: Use GREAT database to map the CREs to the associated genes
+### Step 2: Use GREAT database to map the CREs to the associated genes
 The steps for associating CREs to genes using GREAT database (http://great.stanford.edu/great/public-3.0.0/html/) are as below.
 #### GREAT - Screenshot 1 
 ![GREAT-Screenshot1](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot1.png)
@@ -83,10 +83,8 @@ The steps for associating CREs to genes using GREAT database (http://great.stanf
 #### GREAT - Screenshot 3
 ![GREAT-Screenshot3](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot3.png)
 
- 
 
-
-Use GREAT database to map the CREs to the associated genes
+### Step 3 (Perl): Process GREAT output files to produce heart-specific gene candidates
 ````
 $ cd ../../000_scripts
 $ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_heart_enhancer_genes.txt >> out/001_heart_enhancer_genes.txt
