@@ -73,9 +73,12 @@ $ python3 ../../000_scripts/HN_LD_getSubsets.py H3K27acHeartmm9UE14halfEncodeLic
 ````
 
 Use GREAT database to map the CREs to the associated genes
-````
-$ #TODO: SOCKET CONNECTION TO GREAT etc. 
-````
+The steps for associating CREs to genes using GREAT database (http://great.stanford.edu/great/public-3.0.0/html/) are as below.
+### Step 1
+![GREAT-Screenshot1](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot1.png)
+
+
+
 
 Use GREAT database to map the CREs to the associated genes
 ````
