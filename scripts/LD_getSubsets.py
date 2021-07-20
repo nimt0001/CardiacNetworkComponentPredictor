@@ -28,7 +28,7 @@ def main():
     #create temporary directory within output for temporary files
     tempDir = outputDir + "temp/"
     if not os.path.exists(tempDir):
-	os.makedirs(tempDir)
+        os.makedirs(tempDir)
 
     #concatenate bed files into one single bed file
     #os.system('cat %s | sort -n -k 2 > %s' % (inputDir + "*", tempDir + "all.txt"))
@@ -48,28 +48,26 @@ def annotate_result(bedFile, outputDir):
     bedFile = open(bedFile, "r")
   
     for line in bedFile:
-	line = line.strip()
-	linel = line.split("\t")
+        line = line.strip()
+        linel = line.split("\t")
 	
-	id = linel[3]
+        id = linel[3]
 	
-	id_2 = re.sub('_\d*', "", id)
+        id_2 = re.sub('_\d*', "", id)
 	#id_2 = id_2.replace('|', ';')
 	#id_2 = id_2.replace('Dam', '')
 	
-	factorList = id_2.split(";")
-	for i,name in enumerate(factorList): #strip white space
-	    factorList[i] = name.strip()
+        factorList = id_2.split(";")
+        for i,name in enumerate(factorList): #strip white space
+            factorList[i] = name.strip()
 	    
-	factorList = set(factorList) # get unique
-	factorList = sorted(factorList)
-	id_2 = "_".join(factorList)
+        factorList = set(factorList) # get unique
+        factorList = sorted(factorList)
+        id_2 = "_".join(factorList)
 	
-	newLine = "\t".join(linel)
-	outputFile = outputDir + id_2 + ".bed"
-	os.system('echo "%s" >> %s' % (newLine, outputFile))
-	
-    bedFile.close()
- 
+        newLine = "\t".join(linel)
+        outputFile = outputDir + id_2 + ".bed"
+        os.system('echo "%s" >> %s' % (newLine, outputFile))	
+    bedFile.close()	 
     
 main()
