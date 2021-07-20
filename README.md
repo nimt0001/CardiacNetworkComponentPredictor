@@ -93,7 +93,7 @@ $ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_ubiquitous_promot
 
 ````
 
-## Additional analyses: network analyses with STRING-db  and Cytoscape (https://cytoscape.org)
+## Additional analyses: network analyses with STRING-db and Cytoscape 
 ### STRING-db (https://string-db.org)
 #### Input: network_analysis/163_heart_enhancer_promoter_genes.txt 
 #### Output: network_analysis/string_interactions.tsv
@@ -106,7 +106,6 @@ $ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_ubiquitous_promot
 ![STRING-db-Screenshot3](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/STRING-DB-Screenshot2.png)
 ### Cytoscape (https://cytoscape.org) 
 #### Input: network_analysis/string_interactions.tsv (File -> Import -> Network from file)
-
 #### Cytoscape - Screenshot 1 
 ![Cytoscape-Screenshot1](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/Cytoscape-Screenshot1.png)
 #### Cytoscape - Screenshot 2 
