@@ -4,8 +4,9 @@ A pipeline for predicting cis-regulatory elements (CREs) in heart development an
 
 Code for the manuscript: Louis Dang, Harshini Thiyagarajah, Hieu T. Nim, Tennille Sibbritt, Nicolas Fossat, Richard Burke, Patrick P. L. Tam, Coral G. Warr*, Travis K. Johnson*, Mirana Ramialison*. "Predicting  genes essential for heart development irrespective of their spatial expression pattern".
 
-Languages: Bash, Perl, Python
-Operating systems: Windows, Linux, Mac OSX. Fully tested on Linux Ubuntu 20.04. 
+Languages: Bash, Perl, Python.
+Operating systems: Windows, Linux, Mac OSX. 
+Fully tested on Linux Ubuntu 20.04. 
 
 ## Getting the Source Code
 
@@ -57,12 +58,11 @@ Output file:
 ```
 
 
-## An example script to run the pipeline
+## An example execution of the pipeline
 
 ### Step 1 (Python) - Calculating all the CREs between the organs and their overlaps
 
 ````
-$ #!/bin/bash
 $ cd ../001_raw_histone_data/h3k4me1
 $ python3 ../../000_scripts/HN_LD_getSubsets.py H3K4me1Heartmm9E14halfEncodeLicr.bed H3K4me1Limbmm9E14halfEncodeLicr.bed H3K4me1Livermm9E14halfEncodeLicr.bed H3K4me1Wbrainmm9E14halfEncodeLicr.bed ../../000_scripts/out/
 $ cd ../h3k4me3
@@ -86,7 +86,6 @@ The steps for associating CREs to genes using GREAT database (http://great.stanf
 
 ### Step 3 (Perl): Process GREAT output files to produce heart-specific gene candidates
 ````
-$ cd ../../000_scripts
 $ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_heart_enhancer_genes.txt >> out/001_heart_enhancer_genes.txt
 $ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_heart_promoter_genes.txt >> out/001_heart_promoter_genes.txt
 $ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_ubiquitous_enhancer_genes.txt >> out/001_ubiquitous_enhancer_genes.txt
