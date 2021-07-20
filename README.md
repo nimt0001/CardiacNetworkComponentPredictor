@@ -92,3 +92,9 @@ $ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_ubiquitous_enhanc
 $ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_ubiquitous_promoter_genes.txt >> out/001_ubiquitous_promoter_genes.txt
 
 ````
+
+### Additional steps: Network analyses with STRING-db and Cytoscape
+#### STRING-db - Screenshot 1 
+![STRING-db-Screenshot1](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/STRING-DB-Screenshot1.png)
+#### STRING-db - Screenshot 2
+![STRING-db-Screenshot2](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/STRING-DB-Screenshot2.png)
