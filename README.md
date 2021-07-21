@@ -95,19 +95,19 @@ Input: network_analysis/163_heart_enhancer_promoter_genes.txt
 
 Output: network_analysis/string_interactions.tsv
 
-#### STRING-db - Screenshot 1 
+#### STRING-db - Screenshot 1 - Input search terms
 ![STRING-db-Screenshot1](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/STRING-DB-Screenshot1.png)
-#### STRING-db - Screenshot 2
+#### STRING-db - Screenshot 2 - Display network
 ![STRING-db-Screenshot2](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/STRING-DB-Screenshot2.png)
-#### STRING-db - Screenshot 3
+#### STRING-db - Screenshot 3 - Export network data as tsv file
 ![STRING-db-Screenshot3](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/STRING-DB-Screenshot3.png)
 ### Cytoscape (https://cytoscape.org) 
 
 Input: network_analysis/string_interactions.tsv (File -> Import -> Network from file)
 
-#### Cytoscape - Screenshot 1 
+#### Cytoscape - Screenshot 1 - Import network from STRING-db tsv file
 ![Cytoscape-Screenshot1](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/Cytoscape-Screenshot1.png)
-#### Cytoscape - Screenshot 2 
+#### Cytoscape - Screenshot 2 - Select appropriate columns as source and target nodes
 ![Cytoscape-Screenshot2](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/Cytoscape-Screenshot2.png)
-#### Cytoscape - Screenshot 3 
+#### Cytoscape - Screenshot 3 - Manual network reformatting
 ![Cytoscape-Screenshot3](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/Cytoscape-Screenshot3.png)
