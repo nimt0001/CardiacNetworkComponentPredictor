@@ -70,13 +70,13 @@ $ python3 ../../scripts/LD_getSubsets.py H3K27acHeartmm9UE14halfEncodeLicr.bed H
 
 ### Step 2: Use GREAT database to map the CREs to the associated genes
 The steps for associating CREs to genes using GREAT database (http://great.stanford.edu/great/public-3.0.0/html/) are as below.
-#### GREAT - Screenshot 1 
+#### GREAT - Screenshot 1 - Upload genomic regions
 ![GREAT-Screenshot1](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot1.png)
 
-#### GREAT - Screenshot 2
+#### GREAT - Screenshot 2 - View genomic regions-gene association
 ![GREAT-Screenshot2](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot2.png)
 
-#### GREAT - Screenshot 3
+#### GREAT - Screenshot 3 - Export genomic regions-gene association as a text file
 ![GREAT-Screenshot3](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot3.png)
 
 
