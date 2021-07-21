@@ -76,7 +76,7 @@ The steps for associating CREs to genes using GREAT database (http://great.stanf
 #### GREAT - Screenshot 2 - View genomic regions-gene association
 ![GREAT-Screenshot2](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot2.png)
 
-#### GREAT - Screenshot 3 - Export genomic regions-gene association as a text file
+#### GREAT - Screenshot 3 - Export genomic regions-gene association as a text file 
 ![GREAT-Screenshot3](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot3.png)
 
 
