@@ -59,12 +59,12 @@ Output file:
 ### Step 1 (Python) - Calculating all the CREs between the organs and their overlaps
 
 ````
-$ cd ../001_raw_histone_data/h3k4me1
-$ python3 ../../000_scripts/HN_LD_getSubsets.py H3K4me1Heartmm9E14halfEncodeLicr.bed H3K4me1Limbmm9E14halfEncodeLicr.bed H3K4me1Livermm9E14halfEncodeLicr.bed H3K4me1Wbrainmm9E14halfEncodeLicr.bed ../../000_scripts/out/
+$ cd data/h3k4me1
+$ python3 ../../scripts/LD_getSubsets.py H3K4me1Heartmm9E14halfEncodeLicr.bed H3K4me1Limbmm9E14halfEncodeLicr.bed H3K4me1Livermm9E14halfEncodeLicr.bed H3K4me1Wbrainmm9E14halfEncodeLicr.bed ../../out/
 $ cd ../h3k4me3
-$ python3 ../../000_scripts/HN_LD_getSubsets.py H3K4me3Heartmm9UE14halfEncodeLicr.bed H3K4me3Limbmm9UE14halfEncodeLicr.bed H3K4me3Livermm9UE14halfEncodeLicr.bed H3K4me3Wbrainmm9UE14halfEncodeLicr.bed ../../000_scripts/out/
+$ python3 ../../scripts/LD_getSubsets.py H3K4me3Heartmm9UE14halfEncodeLicr.bed H3K4me3Limbmm9UE14halfEncodeLicr.bed H3K4me3Livermm9UE14halfEncodeLicr.bed H3K4me3Wbrainmm9UE14halfEncodeLicr.bed ../../out/
 $ cd ../h3k27ac
-$ python3 ../../000_scripts/HN_LD_getSubsets.py H3K27acHeartmm9UE14halfEncodeLicr.bed H3K27acLimbmm9UE14halfEncodeLicr.bed H3K27acLivermm9UE14halfEncodeLicr.bed H3K27acWbrainmm9UE14halfEncodeLicr.bed ../../000_scripts/out/
+$ python3 ../../scripts/LD_getSubsets.py H3K27acHeartmm9UE14halfEncodeLicr.bed H3K27acLimbmm9UE14halfEncodeLicr.bed H3K27acLivermm9UE14halfEncodeLicr.bed H3K27acWbrainmm9UE14halfEncodeLicr.bed ../../out/
 
 ````
 
@@ -82,10 +82,10 @@ The steps for associating CREs to genes using GREAT database (http://great.stanf
 
 ### Step 3 (Perl): Process GREAT output files to produce heart-specific gene candidates
 ````
-$ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_heart_enhancer_genes.txt >> out/001_heart_enhancer_genes.txt
-$ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_heart_promoter_genes.txt >> out/001_heart_promoter_genes.txt
-$ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_ubiquitous_enhancer_genes.txt >> out/001_ubiquitous_enhancer_genes.txt
-$ perl compare_GREAT_genes.pl ../003_GREAT_data/001_output/001_ubiquitous_promoter_genes.txt >> out/001_ubiquitous_promoter_genes.txt
+$ perl scripts/compare_GREAT_genes.pl data/great_output/enhancer_promoters_heart_only.txt >> out/enhancer_promoters_heart_only_expressed.txt
+$ perl scripts/compare_GREAT_genes.pl data/great_output/enhancers_heart_only.txt >> out/enhancers_heart_only_expressed.txt
+$ perl scripts/compare_GREAT_genes.pl data/great_output/promoters_heart_only.txt >> out/promoters_heart_only_expressed.txt
+$ perl scripts/compare_GREAT_genes.pl data/great_output/enhancer_promoters_ubiquitous.txt >> out/enhancer_promoters_ubiquitous_expressed.txt
 
 ````
 
