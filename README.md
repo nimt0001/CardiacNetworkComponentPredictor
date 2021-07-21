@@ -109,3 +109,5 @@ Input: network_analysis/string_interactions.tsv (File -> Import -> Network from 
 ![Cytoscape-Screenshot1](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/Cytoscape-Screenshot1.png)
 #### Cytoscape - Screenshot 2 
 ![Cytoscape-Screenshot2](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/Cytoscape-Screenshot2.png)
+#### Cytoscape - Screenshot 3 
+![Cytoscape-Screenshot3](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/Cytoscape-Screenshot3.png)
