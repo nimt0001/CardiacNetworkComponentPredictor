@@ -24,11 +24,7 @@ To get new content, use
 $ git pull upstream master 
 ````
 
-To execute the code 
-````
-$ git pull upstream master 
-````
-
+Usage:
 
 ```text
 1. Calculating histone marks subsets between different ChIP-Seq files. 
@@ -104,7 +100,7 @@ Output: network_analysis/string_interactions.tsv
 #### STRING-db - Screenshot 2
 ![STRING-db-Screenshot2](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/STRING-DB-Screenshot2.png)
 #### STRING-db - Screenshot 3
-![STRING-db-Screenshot3](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/STRING-DB-Screenshot2.png)
+![STRING-db-Screenshot3](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/STRING-DB-Screenshot3.png)
 ### Cytoscape (https://cytoscape.org) 
 
 Input: network_analysis/string_interactions.tsv (File -> Import -> Network from file)
