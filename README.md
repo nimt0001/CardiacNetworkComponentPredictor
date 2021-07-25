@@ -1,4 +1,4 @@
-# Cardiac cis-regulatory elements predictor
+# Cardiac Network Component Predictor Using cis-Regulatory Elements (CREs)
 ## Description
 A pipeline for predicting cis-regulatory elements (CREs) in heart development and diseases
 
