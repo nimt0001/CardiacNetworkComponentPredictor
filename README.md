@@ -55,8 +55,13 @@ Output file:
 
 
 ## An example execution of the pipeline
+### Step 1 - Preparing datasets for organ-specific CREs
+#### Datasets used in this study 
+![Datasets-Screenshot1](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot1.png)
 
-### Step 1 (Python) - Calculating all the CREs between the organs and their overlaps
+
+
+### Step 2 (Python) - Calculating all the CREs between the organs and their overlaps
 
 ````
 $ cd data/h3k4me1
