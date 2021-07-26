@@ -2,7 +2,7 @@
 ## Description
 A pipeline for predicting cardiac gene network components using cis-regulatory elements (CREs)
 
-Code for the manuscript: Louis Dang<sup>*</sup>, Harshini Thiyagarajah<sup>*</sup>, Hieu T. Nim<sup>*</sup>, Daniel Bakopoulos, Micheal See, Nathalie Charitakis, Tennille Sibbritt, Michael Eichenlaub, Nicolas Fossat, Richard Burke, Patrick P. L. Tam, Coral G. Warr<sup>$</sup>, Travis K. Johnson<sup>$</sup>, Mirana Ramialison<sup>$</sup>. "Predicting  genes essential for heart development irrespective of their spatial expression pattern". (<sup>*</sup>: equal first authors; <sup>$</sup>: equal senior authors)
+Code for the manuscript: Louis Dang<sup>\*</sup>, Harshini Thiyagarajah<sup>*</sup>, Hieu T. Nim<sup>*</sup>, Daniel Bakopoulos, Micheal See, Nathalie Charitakis, Tennille Sibbritt, Michael Eichenlaub, Nicolas Fossat, Richard Burke, Patrick P. L. Tam, Coral G. Warr<sup>$</sup>, Travis K. Johnson<sup>$</sup>, Mirana Ramialison<sup>$</sup>. "Predicting  genes essential for heart development irrespective of their spatial expression pattern". (<sup>*</sup>: equal first authors; <sup>$</sup>: equal senior authors)
 
 Languages: Bash, Perl, Python.
 Operating systems: Windows, Linux, Mac OSX. 
