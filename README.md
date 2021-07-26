@@ -1,8 +1,8 @@
 # Cardiac Network Component Predictor Using cis-Regulatory Elements (CREs)
 ## Description
-A pipeline for predicting cis-regulatory elements (CREs) in heart development and diseases
+A pipeline for predicting cardiac gene network components using cis-regulatory elements (CREs)
 
-Code for the manuscript: Louis Dang, Harshini Thiyagarajah, Hieu T. Nim, Tennille Sibbritt, Nicolas Fossat, Richard Burke, Patrick P. L. Tam, Coral G. Warr*, Travis K. Johnson*, Mirana Ramialison*. "Predicting  genes essential for heart development irrespective of their spatial expression pattern".
+Code for the manuscript: Louis Dang*, Harshini Thiyagarajah*, Hieu T. Nim*, Daniel Bakopoulos, Micheal See, Nathalie Charitakis, Tennille Sibbritt, Michael Eichenlaub, Nicolas Fossat, Richard Burke, Patrick P. L. Tam, Coral G. Warr$, Travis K. Johnson$, Mirana Ramialison$. "Predicting  genes essential for heart development irrespective of their spatial expression pattern". (*: equal first authors; $: equal senior authors)
 
 Languages: Bash, Perl, Python.
 Operating systems: Windows, Linux, Mac OSX. 
@@ -73,7 +73,7 @@ $ python3 ../../scripts/LD_getSubsets.py H3K27acHeartmm9UE14halfEncodeLicr.bed H
 
 ````
 
-### Step 2: Use GREAT database to map the CREs to the associated genes
+### Step 3: Use GREAT database to map the CREs to the associated genes
 The steps for associating CREs to genes using GREAT database (http://great.stanford.edu/great/public-3.0.0/html/) are as below.
 #### GREAT - Screenshot 1 - Upload genomic regions
 ![GREAT-Screenshot1](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot1.png)
@@ -85,7 +85,7 @@ The steps for associating CREs to genes using GREAT database (http://great.stanf
 ![GREAT-Screenshot3](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot3.png)
 
 
-### Step 3 (Perl): Process GREAT output files to produce heart-specific gene candidates
+### Step 4 (Perl): Process GREAT output files to produce heart-specific gene candidates
 ````
 $ perl scripts/compare_GREAT_genes.pl data/great_output/enhancer_promoters_heart_only.txt >> out/enhancer_promoters_heart_only_expressed.txt
 $ perl scripts/compare_GREAT_genes.pl data/great_output/enhancers_heart_only.txt >> out/enhancers_heart_only_expressed.txt
