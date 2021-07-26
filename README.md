@@ -57,7 +57,7 @@ Output file:
 ## An example execution of the pipeline
 ### Step 1 - Preparing datasets for organ-specific CREs
 #### Datasets used in this study 
-![Datasets-Screenshot1](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/GREAT-screenshot1.png)
+![Datasets-Screenshot1](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/Datasets-Screenshot1.png)
 
 
 
