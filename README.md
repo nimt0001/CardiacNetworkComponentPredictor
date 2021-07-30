@@ -54,6 +54,7 @@ Output file:
 ```
 
 
+
 ## An example execution of the pipeline
 ### Step 1 - Preparing datasets for organ-specific CREs
 #### Datasets used in this study 
@@ -116,3 +117,8 @@ Input: network_analysis/string_interactions.tsv (File -> Import -> Network from 
 ![Cytoscape-Screenshot2](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/Cytoscape-Screenshot2.png)
 #### Cytoscape - Screenshot 3 - Manual network reformatting
 ![Cytoscape-Screenshot3](https://github.com/nimt0001/CardiacRegulatoryElementsPredictor/raw/main/images/Cytoscape-Screenshot3.png)
+
+## Visualise organ-specific CREs regions in this example on UCSC custom tracks
+Link: http://genome.ucsc.edu/cgi-bin/hgTracks?db=mm9&lastVirtModeType=default&lastVirtModeExtraState=&virtModeType=default&virtMode=0&nonVirtPosition=&position=chr15%3A103004082%2D103088558&hgsid=1134659145_DO3gHeFLzuoFSeD6fYgl2L4SMdFT
+![UCSC-Screenshot1](https://raw.githubusercontent.com/nimt0001/CardiacRegulatoryElementsPredictor/main/images/UCSC-Screenshot1.png)
+
