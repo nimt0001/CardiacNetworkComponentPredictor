@@ -63,8 +63,9 @@ Output file:
 
 
 ### Step 2 (Python) - Calculating all the CREs between the organs and their overlaps
-
-````
+#### BED input file format: chr# <tab> BEGIN <tab> END <tab> SAMPLENAME_INDEX
+#### Example: chr10 <tab> 77210084 <tab> 77210090 <tab> H3K27acHeart_12
+```` 
 $ cd data/h3k4me1
 $ python3 ../../scripts/LD_getSubsets.py H3K4me1Heartmm9E14halfEncodeLicr.bed H3K4me1Limbmm9E14halfEncodeLicr.bed H3K4me1Livermm9E14halfEncodeLicr.bed H3K4me1Wbrainmm9E14halfEncodeLicr.bed ../../out/
 $ cd ../h3k4me3
